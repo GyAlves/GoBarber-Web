@@ -1,5 +1,5 @@
 import React, { useRef, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import * as Yup from 'yup';
 import { FormHandles } from '@unform/core';
@@ -25,6 +25,7 @@ const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const { signIn } = useAuth();
   const { addToast } = useToast();
+  const history = useHistory();
 
   const handleSubmit = useCallback(
     async (data: SignInFormData) => {
@@ -45,10 +46,12 @@ const SignIn: React.FC = () => {
           email: data.email,
           password: data.password,
         });
+        history.push('/dashboard');
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const erros = getValidationErros(err);
           formRef.current?.setErrors(erros);
+          return;
         }
         addToast({
           type: 'error',
@@ -57,7 +60,7 @@ const SignIn: React.FC = () => {
         });
       }
     },
-    [signIn, addToast],
+    [signIn, history, addToast],
   );
 
   return (
@@ -78,7 +81,7 @@ const SignIn: React.FC = () => {
             <Button type="submit">Entrar</Button>
             <a href="">Esqueci minha senha</a>
           </Form>
-          <Link to="/">
+          <Link to="/signup">
             <FiLogIn />
             Criar conta
           </Link>

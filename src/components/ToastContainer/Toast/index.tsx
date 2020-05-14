@@ -12,7 +12,7 @@ import { Container } from './styles';
 
 interface ToastProps {
   message: ToastMessage;
-  style: object;
+  style: object; 
 }
 
 const icons = {
