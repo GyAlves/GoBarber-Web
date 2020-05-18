@@ -47,6 +47,7 @@ const SignUp: React.FC = () => {
         const erros = getValidationErros(err);
 
         formRef.current?.setErrors(erros);
+        
       }
     },
     [addToast, history],
