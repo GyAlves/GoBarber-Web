@@ -22,6 +22,11 @@
 Aplicação web de serviços de barbearia e cabelereiro desenvolvida durante o bootcamp GoStack da Rocketseat. 
 
 
+## Features desenvolvidas :
+
+- Log in na aplicação
+- Cadastro na aplicação
+
 ## Tecnologias  📱 
 Tecnologias e ferramentas utilizadas no projeto :
 
@@ -29,7 +34,23 @@ Tecnologias e ferramentas utilizadas no projeto :
 - Javascript
 - Typescript
 - YUP (Biblioteca de validações)
-- Visual Studio Code
+
+ ## Requisitos necessários para rodar o projeto 
+ - Necessário ter o backend para consumir os dados. Baixe aqui : <a href="https://github.com/GyAlves/GoBarber-Backend"> GoBarber Backend</a>
+    
+  ```   
+  // 1 - Git Clone
+  
+  // 2 - Instale as depêndencias
+  yarn install
+  
+  // 3 - Na pasta do backend rode o servidor 
+  yarn start
+  
+  // O servidor deverá abrir no seu navegador
+
+```
+
 
 ##  Licence :memo:
 
