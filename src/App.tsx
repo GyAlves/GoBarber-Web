@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Route from './routes/index';
 
 import GlobalStyle from './styles/global';
-
 import AppProvider from './hooks';
 
 const App: React.FC = () => (
@@ -13,7 +12,6 @@ const App: React.FC = () => (
       <AppProvider>
         <Route />
       </AppProvider>
-
       <GlobalStyle />
     </Router>
   </>

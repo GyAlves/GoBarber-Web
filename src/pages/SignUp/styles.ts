@@ -11,6 +11,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 
   place-content: center;
   width: 100%;
@@ -48,7 +49,7 @@ export const AnimatedContainer = styled.div`
     a {
       color: #f4ede8;
       display: block;
-      margin-top: 24px;
+      margin-top: 14px;
       text-decoration: none;
       transition: color 0.2s;
 
@@ -60,7 +61,7 @@ export const AnimatedContainer = styled.div`
   > a {
     color: #f4ede8;
     display: block;
-    margin-top: 24px;
+    margin-top: 5px;
     text-decoration: none;
     transition: color 0.2s;
 
