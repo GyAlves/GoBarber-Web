@@ -19,6 +19,7 @@
 
 
 ## 📖 Sobre  
+
 Aplicação web de serviços de barbearia e cabelereiro desenvolvida durante o bootcamp GoStack da Rocketseat. 
 
 
@@ -26,6 +27,9 @@ Aplicação web de serviços de barbearia e cabelereiro desenvolvida durante o b
 
 - Log in na aplicação
 - Cadastro na aplicação
+- Recuperação de Senha 
+- Listagem de agendamentos 
+- Atualização do perfil 
 
 ## Tecnologias  📱 
 Tecnologias e ferramentas utilizadas no projeto :
